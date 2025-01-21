@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+}
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 40px;
+    margin-top: 0; 
+}
+.header h1{
+    margin: 0; 
+    text-align: center;
+    margin-left: 47%;
+    font-family: cursive;
+    font-size: xx-large;
+    
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+}
+.hero {
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+}
+.slogan {
+    text-align: center;
+    color: #2F6B55;
+    position: absolute;
+    font-size: xx-large;
+    z-index: 1;
+    left: 28%;
+    top: 30%;
+    font-weight: bold;
+    text-shadow: black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.container{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-column-gap: 300px; 
+    grid-row-gap: 100px;
+    margin: 0;
+    max-width: 900px; 
+    color: white;
+}
+@media (max-width: 500px){
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin-left: 0;
+        font-size: large;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .hero{
+        height: 50vh;
+    }
+    .hero img {
+        object-fit: cover;
+        height: 50vh;
+    }
+
+    .slogan {
+        left: 10%;
+        top: 20%;
+        font-size: large;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+    }
+    .features h1{
+        font-size: medium;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .specifications h1 {
+        font-size: medium;
+        text-align: center;
+    }
+
+    .specifications table {
+        width: 90%;
+        margin: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .newsletter{
+        width: 200px;
+    }
+}
